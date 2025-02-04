@@ -52,6 +52,3 @@ ggplot(data = penguins) +
   facet_wrap(~species)
 ```
 
-## Face behinde it all
-
-![plot this way](https://web.facebook.com/photo/?fbid=2426542810829204&set=pcb.2426542847495867)
