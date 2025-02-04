@@ -1,0 +1,57 @@
+---
+title: "Finally"
+author: "Sixtus"
+date: "2025-01-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Diamond Cut: Practice Analysis
+
+## Loading my Datasets and having a preview of it
+
+```{r}
+library(tidyverse)
+data("diamonds")
+View(diamonds)
+head(diamonds)
+```
+
+### Getting my visuials
+
+```{r}
+ggplot(data = diamonds) + 
+  geom_bar(mapping = aes(x=cut, fill=clarity))+
+  facet_wrap(~cut) + labs(title = "Getting better at this", subtitle = "hang in there",caption = "Data colected by Sixtus")
+```
+
+
+## Penguins Dataset
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+data("penguins")
+View(penguins)
+head(penguins)
+```
+
+### Now i have my Data loaded... time to do the work
+
+```{r}
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x=flipper_length_mm,y=body_mass_g,shape = species,color= species)) +
+  facet_wrap(~species)
+```
+
+## Face behinde it all
+
+![plot this way](https://web.facebook.com/photo/?fbid=2426542810829204&set=pcb.2426542847495867)
