@@ -1,6 +1,6 @@
 ---
-title: "Finally"
-author: "Sixtus"
+title: "Penguins and Diamond cuts Visualization"
+author: "Onyejaka Kasarachi Sixtus"
 date: "2025-01-28"
 output: html_document
 ---
